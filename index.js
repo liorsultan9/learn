@@ -62,6 +62,7 @@ function initAudioPlayer(){
 	}
 	function seek(event){
 	    if(seeking){
+debugger;
 		    seekslider.value = event.clientX - seekslider.offsetLeft;
 	        seekto = audio.duration * (seekslider.value / 100);
 	        audio.currentTime = seekto;
